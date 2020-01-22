@@ -1,0 +1,38 @@
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+from Modules.GenericPageActions import GenericPageActions
+
+
+
+			ComboIncomeFromTribeHowOften = (<instance>1|<tagname>SELECT</tagname>|<n>TAGNAME</n><v criteria="isequalto">SELECT</v><n>ClassName</n><v criteria="isequalto">hasScript</v>)
+			ComboIncomeFromSellingHowOften = (<instance>1|<tagname>SELECT</tagname>|<n>TAGNAME</n><v criteria="isequalto">SELECT</v><n>ClassName</n><v criteria="isequalto">hasScript</v>)
+			GenericRadioFrequency = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">FREQUENCY</v>)
+			RadioEligibleGetServiceNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioEligibleGetServiceYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioGetServiceNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioGetServiceYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioIncomeFromResourcesFrequencyEveryOtherWeek = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Every Other Week</v>)
+			RadioIncomeFromResourcesFrequencyMonthly = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Monthly</v>)
+			RadioIncomeFromResourcesFrequencyOther = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Other</v>)
+			RadioIncomeFromResourcesFrequencyWeekly = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Weekly</v>)
+			RadioIncomeFromResourcesNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioIncomeFromResourcesYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioIncomeFromSellingFrequencyEveryOtherWeek = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Every Other Week</v>)
+			RadioIncomeFromSellingFrequencyMonthly = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Monthly</v>)
+			RadioIncomeFromSellingFrequencyOther = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Other</v>)
+			RadioIncomeFromSellingFrequencyWeekly = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Weekly</v>)
+			RadioIncomeFromSellingNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioIncomeFromSellingYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioIncomeFromTribeFrequencyEveryOtherWeek = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Every Other Week</v>)
+			RadioIncomeFromTribeFrequencyMonthly = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Monthly</v>)
+			RadioIncomeFromTribeFrequencyOther = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Other</v>)
+			RadioIncomeFromTribeFrequencyWeekly = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Weekly</v>)
+			RadioIncomeFromTribeNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioIncomeFromTribeYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioMemberOfTribeNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioMemberOfTribeYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			TextIncomeFromTribeAmount = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextIncomFromResourcesAmount = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextIncomfromSellingAmount = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextTribeName = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			LinkSaveAndContinue = (<instance>1|<tagname>a</tagname>|<n>innertext</n><v criteria="isequalto">Save and Continue</v>)

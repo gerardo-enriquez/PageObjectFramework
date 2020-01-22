@@ -1,0 +1,35 @@
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+from Modules.GenericPageActions import GenericPageActions
+
+
+
+			ComboState = (<instance>1|<tagname>SELECT</tagname>|)
+			ComboSelfHealthPlanHowOften = (<instance>1|<tagname>SELECT</tagname>|)
+			ComboNotAffordableNextYearHowOften = (<instance>2|<tagname>SELECT</tagname>|)
+			CheckCoverageToGeneric = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">checkbox</v>)
+			TextEmployerName = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextEmployerAddressLine1 = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextEmployerAddressLine2 = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextCity = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextZipCode = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextEmployerIdentificationNumber = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextEmployerPhoneNumber = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextContactAboutEmployee = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextContactPhoneNumber = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextContactEmailAddress = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextLowCostHealthPlanName = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextSelfHealthPlanPremium = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			TextNotAffordableNextYearPremium = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">text</v>)
+			RadioEmployerCoverageAffordableNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioEmployerCoverageAffordableYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioJobNotOfferHealthCoverageNextYearNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioJobNotOfferHealthCoverageNextYearYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioHealthInsuranceNotAffordableNextYearNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioHealthInsuranceNotAffordableNextYearYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioHealthPlanToEnrollAtJobDontKnow = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Don\'t Know</v>)
+			RadioHealthPlanToEnrollAtJobYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioHealthPlanToEnrollAtJobNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="startswith">No</v>)
+			RadioStateHealthBenefitPlanYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioStateHealthBenefitPlanNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			RadioStateHealthBenefitPlanDontKnow = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Don\'t Know</v>)

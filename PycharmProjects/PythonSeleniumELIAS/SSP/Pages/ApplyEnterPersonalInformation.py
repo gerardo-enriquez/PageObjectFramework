@@ -1,0 +1,37 @@
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+from Modules.GenericPageActions import GenericPageActions
+
+
+
+			TextMiddleName = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">middleName</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			TextLastName = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">lastName</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			ComboSuffix = (<instance>1|<tagname>SELECT</tagname>|<n>ID</n><v criteria="isequalto">suffix</v>)
+			TextMaidenName = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">maidenName</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			TextHomePhoneNumber = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">phoneNumber</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			TextMobilePhoneNumber = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">otherPhoneNumber</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			TextEmail = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">email</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			RadioHasHomeYes = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">hasHome1</v><n>TYPE</n><v criteria="isequalto">radio</v>)
+			RadioHasHomeNo = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">hasHome2</v><n>TYPE</n><v criteria="isequalto">radio</v>)
+			RadioApplyForBenefitsYes = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">applicant1</v><n>TYPE</n><v criteria="isequalto">radio</v><n>IsHidden</n><v criteria="isequalto">False</v><n>IsVisible</n><v criteria="isequalto">True</v><n>value</n><v criteria="isequalto">true</v></findby>)
+			RadioApplyForBenefitsNo = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">applicant2</v><n>TYPE</n><v criteria="isequalto">radio</v>)
+			CheckProgramMedicaidOrChip = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">medicaid</v><n>TYPE</n><v criteria="isequalto">checkbox</v>)
+			TextHomeAddressLine1 = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">addressLine1</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			TextHomeAddressLine2 = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">addressLine2</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			TextHomeCity = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">city</v><n>TYPE</n><v criteria="isequalto">text</v><n>IsHidden</n><v criteria="isequalto">False</v><n>IsVisible</n><v criteria="isequalto">True</v><n>name</n><v criteria="isequalto">city</v></findby>)
+			ComboHomeState = (<instance>1|<tagname>SELECT</tagname>|<n>ID</n><v criteria="isequalto">state</v><n>ClassName</n><v criteria="isequalto">resizable</v>)
+			TextHomeZipcode = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">zipcode</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			RadioMailingSameAsHomeYes = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">sameAddress1</v><n>TYPE</n><v criteria="isequalto">radio</v>)
+			RadioMailingSameAsHomeNo = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">sameAddress2</v><n>TYPE</n><v criteria="isequalto">radio</v>)
+			TextMailingAddressLine1 = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">mailingAddressLine1</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			TextMailingAddressLine2 = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">mailingAddressLine2</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			TextMailingCity = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">mailingCity</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			ComboMailingState = (<instance>1|<tagname>SELECT</tagname>|<n>ID</n><v criteria="isequalto">mailingState</v>)
+			TextMailingZipcode = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">mailingZipcode</v><n>TYPE</n><v criteria="isequalto">text</v>)
+			RadioHelpPayingMedicalBillYes = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">helpPayMedBill1</v><n>TYPE</n><v criteria="isequalto">radio</v>)
+			RadioHelpPayingMedicalBillNo = (<instance>1|<tagname>INPUT</tagname>|<n>ID</n><v criteria="isequalto">helpPayMedBill2</v><n>TYPE</n><v criteria="isequalto">radio</v>)
+			RadioPregnantorNewbornMedicalBillYes = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">Yes</v>)
+			RadioPregnantorNewbornMedicalBillNo = (<instance>1|<tagname>INPUT</tagname>|<n>TYPE</n><v criteria="isequalto">radio</v><n>VALUE</n><v criteria="isequalto">No</v>)
+			LinkRetro = (<instance>1|<tagname>LEGEND</tagname>|<n>INNERTEXT</n><v criteria="startswith">Do you need help paying for medical bills from the last three calendar months? If you answer yes and you fall into a category that allows for retroactive approval, we will determine if you are eligible for coverage during those months</v><n>TAGNAME</n><v criteria="isequalto">LEGEND</v>)
+			LinkSaveAndContinue = (<instance>1|<tagname>a</tagname>|<n>innertext</n><v criteria="isequalto">Save and Continue</v>)
+			LinkRetroQuestion = (<instance>1|<tagname>LEGEND</tagname>|<n>DISABLED</n><v criteria="isequalto">True</v><n>INNERTEXT</n><v criteria="contains">Do you want help paying for medical bills from the last 3 months?*</v><n>TAGNAME</n><v criteria="isequalto">LEGEND</v>)
